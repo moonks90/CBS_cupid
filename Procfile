@@ -1,2 +1,2 @@
-web: gunicorn cbscupid.wsgi
+web: gunicorn cupid.wsgi
 release: python manage.py migrate
