@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>LAST CHANCE</title>
+        <style>
+            body{
+                background-image: url('https://media4.giphy.com/media/w7qE0NNM5lCyrenypL/giphy.gif?cid=ecf05e470eg1qpkux21zdryxpzguj68n6hfb67sxvhc4ri6j&rid=giphy.gif&ct=g');
+                font-family: Georgia, serif;
+            }
+
+            .center {
+              margin: 0 auto;
+            }
+
+            .awesome {
+
+              font-family: futura;
+              font-style: italic;
+
+              width:100%;
+
+<!--              margin: 0 auto;-->
+              text-align: center;
+
+              color:#313131;
+              font-size:45px;
+              font-weight: bold;
+              position: absolute;
+              -webkit-animation:colorchange 20s infinite alternate;
+
+
+            }
+
+            @-webkit-keyframes colorchange {
+              0% {
+
+                color: blue;
+              }
+
+              10% {
+
+                color: #8e44ad;
+              }
+
+              20% {
+
+                color: #1abc9c;
+              }
+
+              30% {
+
+                color: #d35400;
+              }
+
+              40% {
+
+                color: blue;
+              }
+
+              50% {
+
+                color: #34495e;
+              }
+
+              60% {
+
+                color: blue;
+              }
+
+              70% {
+
+                color: #2980b9;
+              }
+              80% {
+
+                color: #f1c40f;
+              }
+
+              90% {
+
+                color: #2980b9;
+              }
+
+              100% {
+
+                color: pink;
+              }
+            }
+        </style>
+    </head>
+
+    <body style="text-align:center; color:white">
+
+        <div>
+        <p class="awesome" style="font-size:800%;">LAST CHANCE TO MATCH</p>
+        </div>
+        <div>
+        <p style="color:white">
+                hello
+        </p>
+        <form action="submit" method="POST">
+            {% csrf_token %}
+            GSB ID: <input type="text" name="gsb_id"/><br/>
+            Mate 1: <input type="text" name="mate1_id"/><br/>
+            Mate 2: <input type="text" name="mate2_id"/><br/>
+            Mate 3: <input type="text" name="mate3_id"/><br/>
+
+            <input type="submit" value="Post"/>
+        </form>
+        </div>
+    </body>
+</html>
